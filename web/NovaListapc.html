@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaListaPc.html</title>
+
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/card.js"></script>
+    <script src="./assets/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="container p-0 m-0">
+        <div class="row p-0 m-0" style="background-color: #e0e0e0;">
+
+            <div class="col s12 Cabeçalho">
+                <div class="col s7 left-align">
+                    <img src="./assets/img/logo.png" class="col s4 offset-s1" id="LogoCabeçalho" />
+                </div>
+
+                <div class="col s12 pl-710" id="Options">
+                    <div class="col s12">
+                        <a href="listapc.html" style="color: orange; font-weight: bold;" class="pl-40">Lista de preço</a>
+                        <a href="campanhapc.html" style="font-weight: bold;" class="pl-40">Produtos</a>
+                        <a href="usuariopc.html" style="font-weight: bold;" class="pl-40">Usuários</a>
+                        <span class="pl-40">Wagner Amaral</span>
+                        <div class="col s12" id="Avatar">
+                            <span style="font-weight: bold; color: gray;" id="IconeAvatar">W</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12">&nbsp;</div>
+
+            <div class="col s12 NovaLista">
+                <div class="col s12 left-align pt-5" style="font-size: 20px;font-weight: bold;">
+                    Nova lista <br>
+                    03
+                </div>
+
+                <div class="col s12 yellow"
+                    style="width: 108px; height: 24px; position: relative;left: 89%;top: -44px;">
+                    RASCUNHO
+                </div>
+                <div class="col s12" style="font-size: 12px;position: relative;left: 1189px;top: -39px;">
+                    <span class="ml-5">Última edição em:</span> <br>
+                    <span class="ml_3">12/10/2022 às 10:20 </span> <br>
+                    <span class="ml-5">Guilherme Xavier</span>
+                </div>
+
+
+                <br>
+
+                <div class="col s12 left-align mt_70" style="font-size: 13px;">
+                    Data de validade<br>
+                    <div class="col s12 left-align white" id="DataLista">
+                        <i class="fal fa-calendar-day pl-113 pt-4"></i>
+                    </div>
+                    <span id="Lista">Desconto de pontualidade</span> <br>
+                    <div class="col s12 left-align white" id="DataLista" style="
+                    position: relative;
+                    bottom: 20px;
+                    left: 38px;
+                ">
+                        
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 left-align mt_32 pt-5" style="font-size: 18px;">
+                    Incluir Produto
+                </div>
+
+
+
+                <div class="col s12 left-align pt-5" style="font-size: 13px;">
+                    Fornecedor <br>
+                    <div class="col s3 left-align white" id="PesquisaUsuario">
+                        <i class="fas fa-search pl-202 pt-4"></i>
+                    </div>
+
+                    <span id="Email">Produto</span> <br>
+                    <div class="col s3 white" id="EmailUsuario">
+                        <i class="fas fa-search pl-312 pt-4"></i>
+                    </div>
+
+                    <span id="Empresa">Empresa + Campo de custo</span> <br>
+                    <div class="col s3 left-align white" id="EmpresaUsuario">
+                        <i class="fas fa-caret-down pl-178 pt-3" style="font-size: 14px;"></i>
+                    </div>
+
+                    <span id="Senha">Custo</span> <br>
+                    <div class="col s3 left-align white" id="SenhaUsuario">
+
+                    </div>
+
+                    <span id="ConfirmarSenha">Margem bruta</span> <br>
+                    <div class="col s3 left-align white" id="ConfirmarSenhaUsuario">
+
+                    </div>
+
+                    <div class="col s12" id="btnMore">
+                        <i class="fa fa-plus mt-6 ml_3"></i>
+                    </div>
+
+                    <div class="col s12 mt_57 ml_23">
+                        <div class="col s12" style="font-size: 18px;">
+                            Produtos incluídos
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col s12 white" id="CardNovaLista">
+                <div class="col s12 ">
+                    <span class="ml_15">Empresa</span>
+                    <span class="ml-26">Fornecedor</span>
+                    <span class="ml-26">Produto</span>
+                    <span class="ml-26">Custo</span>
+                    <span class="ml-26">Data Venc.</span>
+                    <span class="ml-26">Dias</span>
+                    <span class="ml-26">(i+1) a.d</span>
+                    <span class="ml-26">Custo Dt Lista</span>
+                    <span class="ml-26">MB</span>
+                    <span class="ml-26">Sugestão MB</span>
+                    <span class="ml-26">P. Venda</span>
+                    <span class="ml-26">P. Venda DT</span>
+                    <span class="ml-26">Custo Ant.</span>
+                    <span class="ml-26">Var.</span>
+                    <span class="ml-26">Opções</span>
+                </div>
+
+                
+
+                <div class="col s12 mt-10" style="font-size: 12px;">
+                    <span class="ml_13">Unaí<i class="fas fa-search ml-5"></i></span>
+                    <span class="ml-43">Basf</span>
+                    <span class="ml-80">Orkestra</span>
+                    <span class="ml-30">R$50,53</span>
+                    <span class="ml-27">12/10/22</span>
+                    <span class="ml-54">111</span>
+                    <span class="ml-31">1,0033173</span>
+                    <span class="ml-53">R$52,11</span>
+                    <span class="ml-52">20%</span>
+                    <span class="ml-52">18%</span>
+                    <span class="ml-65">R$67,16</span>
+                    <span class="ml-59">R$67,16</span>
+                    <span class="ml-58">R$70,21</span>
+                    <span class="ml-41" style="color: greenyellow;">15%</span>
+
+                    <div class="col s12" style="position: relative;top: -20px;left: 239px;font-size: 14px;">
+                        <i class="far fa-pencil ml-1000"></i>
+                        <i class="fas fa-times" style="color: red;"></i>
+                    </div>
+                </div>
+
+                
+
+                <div class="col s12" style="font-size: 12px;">
+                    <span class="ml_13">Unaí<i class="fas fa-search ml-5"></i></span>
+                    <span class="ml-43">Basf</span>
+                    <span class="ml-80">Orkestra</span>
+                    <span class="ml-30">R$50,53</span>
+                    <span class="ml-27">12/10/22</span>
+                    <span class="ml-54">111</span>
+                    <span class="ml-31">1,0033173</span>
+                    <span class="ml-53">R$52,11</span>
+                    <span class="ml-52">20%</span>
+                    <span class="ml-52">18%</span>
+                    <span class="ml-65">R$67,16</span>
+                    <span class="ml-59">R$67,16</span>
+                    <span class="ml-58">R$70,21</span>
+                    <span class="ml-41" style="color: red;">-10%</span>
+
+                    <div class="col s12" style="position: relative;top: -20px;left: 239px;font-size: 14px;">
+                        <i class="far fa-pencil ml-1000"></i>
+                        <i class="fas fa-times" style="color: red;"></i>
+                    </div>
+                </div>
+
+                
+
+                <div class="col s12 mt-5" style="font-size: 12px;">
+                    <span class="ml_13">Unaí<i class="fas fa-search ml-5"></i></span>
+                    <span class="ml-43">Basf</span>
+                    <span class="ml-80">Orkestra</span>
+                    <span class="ml-30">R$50,53</span>
+                    <span class="ml-27">12/10/22</span>
+                    <span class="ml-54">111</span>
+                    <span class="ml-31">1,0033173</span>
+                    <span class="ml-53">R$52,11</span>
+                    <span class="ml-52">20%</span>
+                    <span class="ml-52">18%</span>
+                    <span class="ml-65">R$67,16</span>
+                    <span class="ml-59">R$67,16</span>
+                    <span class="ml-58">R$70,21</span>
+                    <span class="ml-41" style="color: greenyellow;">15%</span>
+
+                    <div class="col s12" style="position: relative;top: -20px;left: 239px;font-size: 14px;">
+                        <i class="far fa-pencil ml-1000"></i>
+                        <i class="fas fa-times" style="color: red;"></i>
+                    </div>
+                </div>
+
+                
+
+                <div class="col s12" style="font-size: 12px;">
+                    <span class="ml_13">Unaí<i class="fas fa-search ml-5"></i></span>
+                    <span class="ml-43">Basf</span>
+                    <span class="ml-80">Orkestra</span>
+                    <span class="ml-30">R$50,53</span>
+                    <span class="ml-27">12/10/22</span>
+                    <span class="ml-54">111</span>
+                    <span class="ml-31">1,0033173</span>
+                    <span class="ml-53">R$52,11</span>
+                    <span class="ml-52">20%</span>
+                    <span class="ml-52">18%</span>
+                    <span class="ml-65">R$67,16</span>
+                    <span class="ml-59">R$67,16</span>
+                    <span class="ml-58">R$70,21</span>
+                    <span class="ml-41" style="color: red;">-5%</span>
+
+                    <div class="col s12" style="position: relative;top: -20px;left: 239px;font-size: 14px;">
+                        <i class="far fa-pencil ml-1000"></i>
+                        <i class="fas fa-times" style="color: red;"></i>
+                    </div>
+                </div>
+
+                
+
+                <div class="col s12 mt-5" style="font-size: 12px;">
+                    <span class="ml_13">Unaí<i class="fas fa-search ml-5"></i></span>
+                    <span class="ml-43">Basf</span>
+                    <span class="ml-80">Orkestra</span>
+                    <span class="ml-30">R$50,53</span>
+                    <span class="ml-27">12/10/22</span>
+                    <span class="ml-54">111</span>
+                    <span class="ml-31">1,0033173</span>
+                    <span class="ml-53">R$52,11</span>
+                    <span class="ml-52">20%</span>
+                    <span class="ml-52">18%</span>
+                    <span class="ml-65">R$67,16</span>
+                    <span class="ml-59">R$67,16</span>
+                    <span class="ml-58">R$70,21</span>
+                    <span class="ml-41" style="color: greenyellow;">15%</span>
+
+                    <div class="col s12" style="position: relative;top: -20px;left: 239px;font-size: 14px;">
+                        <i class="far fa-pencil ml-1000"></i>
+                        <i class="fas fa-times" style="color: red;"></i>
+                    </div>
+                </div>
+
+                
+
+                <div class="col s12" style="font-size: 12px;">
+                    <span class="ml_13">Unaí<i class="fas fa-search ml-5"></i></span>
+                    <span class="ml-43">Basf</span>
+                    <span class="ml-80">Orkestra</span>
+                    <span class="ml-30">R$50,53</span>
+                    <span class="ml-27">12/10/22</span>
+                    <span class="ml-54">111</span>
+                    <span class="ml-31">1,0033173</span>
+                    <span class="ml-53">R$52,11</span>
+                    <span class="ml-52">20%</span>
+                    <span class="ml-52">18%</span>
+                    <span class="ml-65">R$67,16</span>
+                    <span class="ml-59">R$67,16</span>
+                    <span class="ml-58">R$70,21</span>
+                    <span class="ml-41" style="color: red;">-1%</span>
+
+                    <div class="col s12" style="position: relative;top: -20px;left: 239px;font-size: 14px;">
+                        <i class="far fa-pencil ml-1000"></i>
+                        <i class="fas fa-times" style="color: red;"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+                <div class="col s12">&nbsp;</div>
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 mt_57 ml_23">
+                    <div class="col s12" style="font-size: 15px;">
+                        Obs:
+
+                        <ol style="font-size: 11px;position: relative;left: -19px;top: -8px;">
+                            <li>Esta campanha poderá ser modificada a qualquer momento</li>
+                            <li>Vencimento máximo 20/08/2022</li>
+                            <li>Desconto de pontualidade: 3%</li>
+                            <li>Desconto de antecipação SOB CONSULTA</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col s12">&nbsp;</div>
+
+
+    </div>
+
+    <div class="col s12" id="RodaPeNovaLista">
+
+        <div class="col s12" id="btnSave">
+            <i class="fas fa-save" style="position: relative;bottom: 128px;left: 19%;"></i>
+        </div>
+
+        <div class="col s12" id="btnPrint">
+            <i class="far fa-print" style="position: relative;bottom: 150px;left: 21%;"></i>
+        </div>
+
+        <div class="col s12" id="btnCheck">
+            <i class="fas fa-check" style="position: relative;bottom: 173px;left: 23%; color: green;"></i>
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>
